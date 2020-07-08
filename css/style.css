@@ -1,0 +1,322 @@
+/*============= RESETS =============*/
+
+/*-- iPhone X Remove Gutters --*/
+html {
+  padding: env(safe-area-inset);
+}
+
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html,
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+.svg-inline--fa {
+  color: white;
+}
+
+.fa-star {
+  color: #1EBBA3;
+}
+
+.text-site {
+  color: #1EBBA3;
+}
+
+.heading-underline {
+  width: 17rem;
+  height: .1rem;
+  background-color: #1EBBA3;
+  margin: 0 auto;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+  content: "";
+  height: 4rem;
+  display: block;
+  margin-top: -4rem;
+}
+
+/*============= NAVIGATION =============*/
+.navbar {
+  padding: .7rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  font-size: .9rem;
+  transition: background-color .5s ease;
+}
+
+.navbar-nav li {
+  padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #1EBBA3;
+}
+
+.custom-toggler-icon {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.navbar.solid,
+.navbar.solid-toggle {
+  background: rgba(0, 0, 0, .7) !important;
+  transition: background-color 1s ease;
+}
+
+/*-- Remove Button Outline --*/
+button:focus,
+a:focus,
+a.btn:focus {
+  outline: 0;
+  -webkit-appearance: none;
+  box-shadow: none;
+  transition: all .6s ease;
+}
+
+button,
+a,
+a.btn,
+.svg-inline--fa {
+  transition: all .6s ease;
+}
+
+/*============= LANDING PAGE =============*/
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home-inner {
+  background-image: url('../img/koi-fish.jpg');
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  display: table;
+}
+
+/*-- Landing Page Caption --*/
+.caption {
+  z-index: 1;
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.caption h1 {
+  font-size: 4.5rem;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2.5rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 0.8rem;
+}
+
+.caption-underline {
+  width: 27rem;
+  height: .1rem;
+  background-color: #1EBBA3;
+  margin: 0 auto;
+}
+
+
+/*-- Bouncing Down Arrow --*/
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+}
+
+.down-arrow .svg-inline--fa {
+  color: #1EBBA3;
+  font-size: 2.2rem;
+
+  opacity: .7;
+}
+
+.down-arrow .svg-inline--fa:hover {
+  color: black;
+}
+
+/*============= HOME SECTION =============*/
+
+h1.heading {
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.profil-h3 {
+  color: #1EBBA3;
+}
+
+
+/*--- iOS Fixed Background Image --*/
+
+
+/*============= SKILLS SECTION =============*/
+.fixed {
+  position: relative;
+  width: 100%;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+.fixed-dark {
+  background-image: url('../img/computers.jpg');
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: table;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, .2);
+  padding: 7rem 0;
+  z-index: 1000;
+}
+
+.Skills-container-h3 {
+  padding-bottom: 1rem;
+}
+
+.no-bullets {
+  list-style: none;
+  /* padding-right: 50px; */
+  padding-right: 2.2rem;
+
+}
+
+.ability-title:hover {
+  background: rgba(255, 255, 255, .4);
+
+
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  transition: .6s ease;
+  cursor: pointer;
+
+}
+
+.skills-li:hover {
+
+
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .6s ease;
+  cursor: pointer;
+
+}
+
+
+/*============= footer SECTION =============*/
+
+.footer {
+  height: 37rem;
+  background: url('../img/footer/footer.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.dark-bgc-img {
+  height: 37rem;
+  background-color: rgba(57, 63, 70, .85);
+}
+
+.btn-floating {
+
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  opacity: 0.7;
+  transition: .6s ease;
+  display: block;
+
+}
+
+
+.linkedin {
+  background-color: #007bb6;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.envelope {
+  background-color: rgb(151, 5, 5);
+}
+
+.github {
+  background-color: #0c2e75;
+}
+
+.btn-floating:hover {
+  opacity: 1;
+}
